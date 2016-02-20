@@ -2,7 +2,7 @@ angular.module('healthTrakApp',['ngRoute','ngResource'])
     .config(['$routeProvider', '$locationProvider',function($routeProvider,$locationProvider){
         $routeProvider.when('/',{
             controller: 'indexCtrl',
-            templateUrl: '/app/partials/index.html'
+            templateUrl: '/app/partials/map.html'
         })
         .when('/about',{
             controller: 'aboutCtrl',

@@ -1,4 +1,4 @@
 angular.module("healthTrakApp")
-    .controller('indexCtrl',function($scope){
+    .controller('indexCtrl',['$scope',function($scope){
         
-    });
+    }]);

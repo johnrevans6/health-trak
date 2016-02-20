@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html lang="en" ng-app="healthTrakApp">
+<html lang="en" ng-app="healthTrakApp" ng-controller="indexCtrl">
     <head>
         <title>Health Trak</title>
         
@@ -23,6 +23,7 @@
         <script type="text/javascript" src="app//module.js"></script>
         <script type="text/javascript" src="app/js/controllers/indexCtrl.js"></script>
         <script type="text/javascript" src="app/js/controllers/aboutCtrl.js"></script>
+        <script type="text/javascript" src="app/js/directives/mapDirective.js"></script>
         
         <base href="/">
     </head>
@@ -46,7 +47,7 @@
             </div>
         </nav>        
         <div class="container">
-            <h1>Test</h1>
+            <ng-view></ng-view>
         </div>                    
     </body>
 </html>
