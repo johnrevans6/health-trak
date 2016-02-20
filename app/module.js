@@ -1,8 +1,8 @@
-angular.module('healthTrakApp',['ngRoute','ngResource'])
+angular.module('healthTrakApp',['ngRoute','ngResource','ngSanitize','mgcrea.ngStrap'])
     .config(['$routeProvider', '$locationProvider',function($routeProvider,$locationProvider){
         $routeProvider.when('/',{
             controller: 'indexCtrl',
-            templateUrl: '/app/partials/map.html'
+            templateUrl: '/app/partials/index.html'
         })
         .when('/about',{
             controller: 'aboutCtrl',

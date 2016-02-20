@@ -1,0 +1,27 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="panel panel-body">
+                <map></map>
+                <div class="scale">
+                    <div ng-repeat="n in [0,0.1,0.2,0.3,0.4,0.5,0.6,0.7,0.8,0.9,1.0]"
+                        ng-style="{backgroundColor: '{{n | map_color}}'}">
+                        {{n}}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6">
+        <div class="panel panel-defaut">
+            <div class="panel panel-body">                
+                <div class="regionlist">
+                    <div ng-repeat="(key,region) in dummyData">
+                        <div>{{key}}</div>
+                        <div>{{region.value | number}}</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
