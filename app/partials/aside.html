@@ -1,8 +1,46 @@
-<div class="container">
-    <h1>Test</h1>
-    <div class="row" ng-repeat="q in queries">
-        <button type="button" class="btn btn-default" ng-model="button.toggle" bs-checkbox>
-            {{q.human}}
-        </button>
+<!--<div class="aside" tabindex="-1" role="dialog">
+  <div class="aside-dialog">
+    <div class="aside-content">
+      <div class="aside-header" ng-show="title">
+        <button type="button" class="close" ng-click="$hide()">&times;</button>
+        <h4 class="aside-title" ng-bind="title"></h4>
+      </div>
+      <div class="aside-body" ng-bind="content"></div>
+        <div class="container">
+            <h1>Test</h1>
+            <div class="row" ng-repeat="q in queries">
+                <button type="button" class="btn btn-default" ng-model="button.toggle" bs-checkbox>
+                    {{q.human}}
+                </button>
+            </div>
+        </div>
+      <div class="aside-footer">
+        <button type="button" class="btn btn-default" ng-click="$hide()">Close</button>
+      </div>
     </div>
+  </div>
+</div>-->
+
+<div class="aside" tabindex="-1" role="dialog">
+  <div class="aside-dialog">
+    <div class="aside-content">
+      <div class="aside-header" ng-show="title">
+        <button type="button" class="close" ng-click="$hide()">&times;</button>
+        <h4 class="aside-title" ng-bind="title"></h4>
+      </div>
+      <div class="aside-body">        
+            <ul class="list-group">
+                <li class="list-group-item" ng-repeat="q in queries">
+                    <button type="button" class="btn btn-default" ng-model="button.toggle" bs-radio-group>
+                        {{q.human}}
+                    </button>
+                </li>
+            </ul>
+        </div>
+      </div>
+      <div class="aside-footer">
+        <button type="button" class="btn btn-default" ng-click="$hide()">Close</button>
+      </div>
+    </div>
+  </div>
 </div>

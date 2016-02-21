@@ -18,5 +18,6 @@ angular.module("healthTrakApp")
             $scope.responseData = responseData;
         };        
         $scope.createDummyData();
+         
         
     }]);

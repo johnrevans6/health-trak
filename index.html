@@ -31,7 +31,7 @@
         <script type="text/javascript" src="app/js/controllers/asideCtrl.js"></script>
         <script type="text/javascript" src="app/js/directives/mapDirective.js"></script>
         <script type="text/javascript" src="app/js/directives/regionDirective.js"></script>
-        <script type="text/javascript" src="app/js/directives/chartDirective.js"></script>
+        <script type="text/javascript" src="app/js/directives/chartDirective.js"></script>       
         <script type="text/javascript" src="app/js/filters/mapFilter.js"></script>
         <script type="text/javascript" src="app/js/factories/queryFactory.js"></script>
               
@@ -55,8 +55,9 @@
                     <li><a href="/about">About</a></li>
                 </ul>
                 <ul class="nav navbar-nav pull-right">
-                    <li><button type="button" class="btn btn-lg btn-primary" ng-controller="asideCtrl" bs-aside="aside">
-                            Filter                             
+                    <li><button type="button" class="btn btn-lg btn-primary" ng-controller="asideCtrl" 
+                        data-template="/app/partials/aside.html" bs-aside="aside">
+                            Search Respondants                            
                         </button>
                     </li>
                 </ul>
