@@ -15,12 +15,7 @@
     <div class="col-md-6">
         <div class="panel panel-defaut">
             <div class="panel panel-body">                
-                <div class="regionlist">
-                    <div ng-repeat="(key,region) in dummyData">
-                        <div>{{key}}</div>
-                        <div>{{region.value | number}}</div>
-                    </div>
-                </div>
+                <ng-include src="'/app/partials/chart.html'"></ng-include>               
             </div>
         </div>
     </div>

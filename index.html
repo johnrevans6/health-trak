@@ -7,27 +7,34 @@
         <!-- Base CSS -->
         <link rel="stylesheet" href="app/css/bootstrap.min.css">
         <link rel="stylesheet" href="app/css/angular-motion.min.css">
+        <link rel="stylesheet" href="app/css/bootstrap-additions.min.css">
         <link rel="stylesheet" href="app/css/style.css">
         
         <!-- Base JS -->
+        <script src="https://cdn.firebase.com/js/client/1.0.6/firebase.js"></script>
         <script type="text/javascript" src="app/vendor/jquery-1.12.0.min.js"></script>
         <script type="text/javascript" src="app/vendor/bootstrap.min.js"></script>
+        <script type="text/javascript" src="app/vendor/d3.min.js"></script>
         <script type="text/javascript" src="app/vendor/angular.min.js"></script>
         <script type="text/javascript" src="app/vendor/angular-route.min.js"></script>
         <script type="text/javascript" src="app/vendor/angular-resource.min.js"></script>
+        <script type="text/javascript" src="app/vendor/angular-animate.min.js"></script>
         <script type="text/javascript" src="app/vendor/angular-sanitize.min.js"></script>
         <script type="text/javascript" src="app/vendor/angular-strap.min.js"></script>
         <script type="text/javascript" src="app/vendor/angular-strap.tpl.min.js"></script>
         <script type="text/javascript" src="app/vendor/angularfire.min.js"></script>
         
-        <!-- Controllers, Directives, Filters, and Services -->
-        <script type="text/javascript" src="app//module.js"></script>
+        <!-- Controllers, Directives, Filters, and Factories -->
+        <script type="text/javascript" src="app/js/module.js"></script>
         <script type="text/javascript" src="app/js/controllers/indexCtrl.js"></script>
         <script type="text/javascript" src="app/js/controllers/aboutCtrl.js"></script>
+        <script type="text/javascript" src="app/js/controllers/asideCtrl.js"></script>
         <script type="text/javascript" src="app/js/directives/mapDirective.js"></script>
         <script type="text/javascript" src="app/js/directives/regionDirective.js"></script>
+        <script type="text/javascript" src="app/js/directives/chartDirective.js"></script>
         <script type="text/javascript" src="app/js/filters/mapFilter.js"></script>
-        
+        <script type="text/javascript" src="app/js/factories/queryFactory.js"></script>
+              
         <base href="/">
     </head>
     <body>
@@ -46,6 +53,12 @@
                 <ul class="nav navbar-nav">
                     <li><a href="/">Home</a></li>
                     <li><a href="/about">About</a></li>
+                </ul>
+                <ul class="nav navbar-nav pull-right">
+                    <li><button type="button" class="btn btn-lg btn-primary" ng-controller="asideCtrl" bs-aside="aside">
+                            Filter                             
+                        </button>
+                    </li>
                 </ul>
             </div>
         </nav>        
