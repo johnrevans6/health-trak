@@ -31,7 +31,7 @@
       <div class="aside-body">        
             <ul class="list-group">
                 <li class="list-group-item" ng-repeat="q in queries">
-                    <button type="button" class="btn btn-default" ng-model="button.toggle" bs-radio-group>
+                    <button type="button" class="btn btn-default" ng-model="button.radio" value={{q.brfss}} bs-radio-group>
                         {{q.human}}
                     </button>
                 </li>

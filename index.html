@@ -26,8 +26,7 @@
         
         <!-- Controllers, Directives, Filters, and Factories -->
         <script type="text/javascript" src="app/js/module.js"></script>
-        <script type="text/javascript" src="app/js/controllers/indexCtrl.js"></script>
-        <script type="text/javascript" src="app/js/controllers/aboutCtrl.js"></script>
+        <script type="text/javascript" src="app/js/controllers/indexCtrl.js"></script>        
         <script type="text/javascript" src="app/js/controllers/asideCtrl.js"></script>
         <script type="text/javascript" src="app/js/directives/mapDirective.js"></script>
         <script type="text/javascript" src="app/js/directives/regionDirective.js"></script>
@@ -49,11 +48,7 @@
                 <a class="navbar-brand" href="/">Health Trak</a>
             </div>
             
-            <div class="collapse navbar-collapse" id="nav-toggle">
-                <ul class="nav navbar-nav">
-                    <li><a href="/">Home</a></li>
-                    <li><a href="/about">About</a></li>
-                </ul>
+            <div class="collapse navbar-collapse" id="nav-toggle">                
                 <ul class="nav navbar-nav pull-right">
                     <li><button type="button" class="btn btn-lg btn-primary" ng-controller="asideCtrl" 
                         data-template="/app/partials/aside.html" bs-aside="aside">
